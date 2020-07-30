@@ -1,0 +1,14 @@
+version: "3.7"
+services:
+  cronops-web-dev:
+    build:
+      context: .
+      target: dev
+    ports:
+      - 8000:8000
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+      - GATSBY_WEBPACK_PUBLICPATH=/
