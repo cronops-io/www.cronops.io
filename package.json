@@ -1,11 +1,11 @@
 {
-  "name": "v4",
-  "description": "Personal Website V4",
-  "version": "1.0.0",
-  "author": "CronOps <brittany.chiang@gmail.com>",
+  "name": "0.0.1",
+  "description": "CronOps.io Website",
+  "version": "0.0.1",
+  "author": "CronOps <info@cronops.io>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bchiang7/v4"
+    "url": "https://github.com/cronops-io/www.cronops.io"
   },
   "keywords": [
     "gatsby"
