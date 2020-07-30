@@ -1,4 +1,4 @@
-<div align="right">
+<div align="left">
     <img src="./%40figures/cronops-isologo-simple.png" alt="CronOps" width="350"/>
 </div>
 
