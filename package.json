@@ -1,13 +1,7 @@
 {
-<<<<<<< HEAD
   "name": "www.cronops.io",
   "description": "CronOps Website",
   "version": "1.0.0",
-=======
-  "name": "0.0.1",
-  "description": "CronOps.io Website",
-  "version": "0.0.1",
->>>>>>> master
   "author": "CronOps <info@cronops.io>",
   "repository": {
     "type": "git",
