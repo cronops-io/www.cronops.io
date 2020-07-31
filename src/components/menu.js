@@ -107,7 +107,7 @@ const Menu = ({ menuOpen, toggleMenu }) => {
                 </NavListItem>
               ))}
           </NavList>
-          <ResumeLink href="https://github.com/cronops" target="_blank" rel="nofollow noopener noreferrer">
+          <ResumeLink href="https://github.com/cronops-io" target="_blank" rel="nofollow noopener noreferrer">
             Github
           </ResumeLink>
         </NavLinks>

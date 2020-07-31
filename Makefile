@@ -7,7 +7,7 @@ LOCAL_OS_GROUP_ID := $(shell id -g)
 DOCKER_ENVIRONMENT  := dev
 DOCKER_COMPOSE_FILE := docker-compose-${DOCKER_ENVIRONMENT}.yaml
 DOCKER_COMPOSE_CMD  := COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=1 docker-compose -f ${DOCKER_COMPOSE_FILE}
-DOCKER_IMAGE_NAME   := cronopsio
+DOCKER_IMAGE_NAME   := www-cronops
 DOCKER_RELEASE_TAG  := v0.0.1
 
 help:
@@ -52,7 +52,13 @@ app-logs: ## Show boostrap-vue env logs
 	${DOCKER_COMPOSE_CMD} logs --tail=10 bb-web-${DOCKER_ENVIRONMENT}
 
 app-sh: ## Get into bootstrap-vue container through a shell
-	${DOCKER_COMPOSE_CMD} exec bb-web-${DOCKER_ENVIRONMENT} bash
+	${DOCKER_COMPOSE_CMD} exec cronops-web-${DOCKER_ENVIRONMENT} bash
+
+build-dist: ## Deploy builded version to AWS || eg: make APP_ENVIRONMENT="dev" deploy-dist-aws
+	DOCKER_BUILDKIT=1 docker build -t ${DOCKER_IMAGE_NAME}:${DOCKER_RELEASE_TAG} --target prd .
+	docker run -d --name "${DOCKER_IMAGE_NAME}-${DOCKER_RELEASE_TAG}" ${DOCKER_IMAGE_NAME}:${DOCKER_RELEASE_TAG}
+	docker cp ${DOCKER_IMAGE_NAME}-${DOCKER_RELEASE_TAG}:/usr/share/nginx/html/ ./dist/
+	docker rm ${DOCKER_IMAGE_NAME}-${DOCKER_RELEASE_TAG} --force
 
 deploy-dist-aws: ## Deploy builded version to AWS || eg: make APP_ENVIRONMENT="dev" deploy-dist-aws
 	DOCKER_BUILDKIT=1 docker build -t ${DOCKER_IMAGE_NAME}:${DOCKER_RELEASE_TAG} --target prd .
