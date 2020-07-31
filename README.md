@@ -1,5 +1,5 @@
-<div align="center">
-    <img src="./%40figures/cronops-isologo.png" alt="CronOps" width="250"/>
+<div align="left">
+    <img src="./%40figures/cronops-isologo-simple.png" alt="CronOps" width="350"/>
 </div>
 
 # www.cronops.io

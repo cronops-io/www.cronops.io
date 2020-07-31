@@ -1,6 +1,6 @@
 version: "3.7"
 services:
-  cronops-web-dev:
+  web-dev:
     build:
       context: .
       target: dev

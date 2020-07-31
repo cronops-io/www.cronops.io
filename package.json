@@ -1,11 +1,11 @@
 {
-  "name": "v4",
-  "description": "Personal Website V4",
+  "name": "www.cronops.io",
+  "description": "CronOps Website",
   "version": "1.0.0",
-  "author": "CronOps <brittany.chiang@gmail.com>",
+  "author": "CronOps <info@cronops.io>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bchiang7/v4"
+    "url": "https://github.com/cronops-io/www.cronops.io"
   },
   "keywords": [
     "gatsby"
@@ -35,7 +35,7 @@
   "dependencies": {
     "animejs": "^3.1.0",
     "babel-plugin-styled-components": "^1.10.6",
-    "gatsby": "^2.18.7",
+    "gatsby": "^2.24.15",
     "gatsby-image": "^2.2.34",
     "gatsby-plugin-google-analytics": "^2.1.29",
     "gatsby-plugin-manifest": "^2.2.31",
