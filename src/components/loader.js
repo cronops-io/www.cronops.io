@@ -35,6 +35,17 @@ const StyledLogo = styled.div`
       opacity: 0;
     }
   }
+  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    fill: none;
+    user-select: none;
+    #B {
+      opacity: 0;
+    }
+  }
 `;
 
 const Loader = ({ finishLoading }) => {

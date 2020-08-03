@@ -76,6 +76,10 @@ const StyledFolder = styled.div`
     width: 40px;
     height: 40px;
   }
+  img {
+    width: 40px;
+    height: 40px;
+  }
 `;
 const StyledProjectLinks = styled.div`
   margin-right: -10px;
@@ -86,6 +90,10 @@ const StyledIconLink = styled.a`
   top: -10px;
   padding: 10px;
   svg {
+    width: 20px;
+    height: 20px;
+  }
+  img {
     width: 20px;
     height: 20px;
   }
@@ -144,7 +152,7 @@ const Projects = ({ data }) => {
   const projectsToShow = showMore ? projects : firstSix;
 
   return (
-    <StyledContainer>
+    <StyledContainer id="related-projects">
       <StyledTitle ref={revealTitle}>Related Projects</StyledTitle>
       <StyledArchiveLink to="/archive" ref={revealArchiveLink}>
         view the complete list

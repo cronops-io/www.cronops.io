@@ -31,8 +31,12 @@ const StyledSocialList = styled.ul`
 const StyledSocialLink = styled.a`
   padding: 10px;
   svg {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
+  }
+  img {
+    width: 30px;
+    height: 30px;
   }
 `;
 const StyledMetadata = styled.div`
@@ -53,6 +57,12 @@ const StyledGitHubInfo = styled.div`
     margin: 0 7px;
   }
   svg {
+    display: inline-block;
+    height: 15px;
+    width: auto;
+    margin-right: 5px;
+  }
+  img {
     display: inline-block;
     height: 15px;
     width: auto;
@@ -105,8 +115,8 @@ const Footer = () => {
           href="https://github.com/cronops-io"
           target="_blank"
           rel="nofollow noopener noreferrer">
-          <div><b>CronOps 2020</b></div>
-          <div>Open Sourced with ♡</div>
+          <div><b>CronOps 2020</b> | Open Sourced with ♡</div>
+          <div>Made with <a href="https://github.com/bchiang7/v4" target="_blank">bchiang7/v4</a> for GastbyJs</div>
 
           {githubInfo.stars && githubInfo.forks && (
             <StyledGitHubInfo>

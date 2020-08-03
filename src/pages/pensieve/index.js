@@ -78,6 +78,10 @@ const StyledFolder = styled.div`
     width: 40px;
     height: 40px;
   }
+  img {
+    width: 40px;
+    height: 40px;
+  }
 `;
 const StyledPostName = styled.h5`
   margin: 0 0 10px;

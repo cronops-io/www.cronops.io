@@ -39,10 +39,10 @@ const StyledLink = styled.a`
     height: 38px;
   }
   img {
-    float: right;
     width: 48px;
     height: 48px;
-    max-width: 200%;
+    float: right;
+    max-width: 100%;
     margin-left: 50px;
     margin-right: auto;
     background:none;

@@ -1,5 +1,5 @@
 import React from 'react';
-import icon from '../../images/icons/medium.png'; // Tell webpack this JS file uses this image
+import icon from '../../images/icons/medium-512x512.png'; // Tell webpack this JS file uses this image
 
 const IconMedium = () => <img src={icon} alt="medium"/>;
 

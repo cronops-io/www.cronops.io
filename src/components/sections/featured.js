@@ -104,6 +104,10 @@ const StyledLinkWrapper = styled.div`
       width: 22px;
       height: 22px;
     }
+    img {
+      width: 22px;
+      height: 22px;
+    }
   }
 `;
 const StyledFeaturedImg = styled(Img)`
@@ -215,7 +219,7 @@ const Featured = ({ data }) => {
   }, []);
 
   return (
-    <StyledContainer id="projects">
+    <StyledContainer id="featured">
       <Heading ref={revealTitle}>Our initiatives</Heading>
 
       <div>

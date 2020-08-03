@@ -51,7 +51,7 @@ const Contact = ({ data }) => {
 
   return (
     <StyledContainer id="contact" ref={revealContainer}>
-      <StyledHeading>What&apos;s Next?</StyledHeading>
+      <StyledHeading>Want to collaborate?</StyledHeading>
 
       <StyledTitle>{title}</StyledTitle>
 

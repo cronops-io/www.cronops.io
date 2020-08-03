@@ -89,6 +89,10 @@ const StyledTable = styled.table`
           width: 20px;
           height: 20px;
         }
+        img {
+          width: 20px;
+          height: 20px;
+        }
       }
     }
   }
