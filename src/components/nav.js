@@ -52,8 +52,16 @@ const StyledLogo = styled.div`
       svg {
         fill: ${colors.transGreen};
       }
+      img {
+        fill: ${colors.transGreen};
+      }
     }
     svg {
+      fill: none;
+      transition: ${theme.transition};
+      user-select: none;
+    }
+    img {
       fill: none;
       transition: ${theme.transition};
       user-select: none;
