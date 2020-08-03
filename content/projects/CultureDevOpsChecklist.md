@@ -1,5 +1,5 @@
 ---
-date: '2020-03-01'
+date: '2020-03-29'
 title: 'DevOps Checklist'
 github: 'https://github.com/myplanet'
 external: 'https://devopschecklist.com/'

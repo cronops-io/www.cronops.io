@@ -4,14 +4,12 @@ avatar: './isologo.png'
 skills:
   - DevOps
   - SecOps
-  - Cloud Computing
   - Strategic Leadership
   - Operational Excellence
   - Lean Management
   - Performance Efficiency
   - Continuous Improvement
-  - Sharing
-  - Learning
+  - Continuous Learning
 ---
 
 **DevOps Enablement Open Source Initiative**

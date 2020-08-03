@@ -1,5 +1,5 @@
 ---
-date: '2020-03-01'
+date: '2020-03-28'
 title: 'Burnout Index'
 github: 'https://github.com/yerbolabs/'
 external: 'https://burnoutindex.org/'
