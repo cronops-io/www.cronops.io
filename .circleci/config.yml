@@ -67,7 +67,7 @@ workflows:
   version: 2
   test_and_release:
     jobs:
-      - build-deploy-prd:
+      - build-deploy-gh-pages:
           context: cronops-org-global-context
           filters:
             branches:
