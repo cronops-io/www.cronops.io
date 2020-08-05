@@ -7,6 +7,13 @@ All notable changes to this project will be documented in this file.
 
 
 
+<a name="v0.0.2"></a>
+## [v0.0.2] - 2020-08-05
+
+- Merge branch 'master' of github.com:cronops-io/www.cronops.io
+- CRONOPS-9 | adding Makefile deploy-dist-github cmd
+
+
 <a name="v0.0.1"></a>
 ## v0.0.1 - 2020-08-05
 
@@ -30,4 +37,5 @@ All notable changes to this project will be documented in this file.
 - CRONOPS-9 | Initial Commit
 
 
-[Unreleased]: https://github.com/cronops-io/www.cronops.io/compare/v0.0.1...HEAD
+[Unreleased]: https://github.com/cronops-io/www.cronops.io/compare/v0.0.2...HEAD
+[v0.0.2]: https://github.com/cronops-io/www.cronops.io/compare/v0.0.1...v0.0.2
