@@ -5,10 +5,8 @@ FROM node:14.1.0-stretch-slim AS base-build
 RUN mkdir /app
 WORKDIR /app
 
-RUN apt-get update && apt-get install -y libglu1 libxi6 && apt-get clean
+RUN apt-get update && apt-get install -y libglu1 libxi6 libgconf-2-4 && apt-get clean
 RUN npm install -g gatsby-cli
-
-# libgconf-2-4
 
 # add `/app/node_modules/.bin` to $PATH
 ENV PATH /app/node_modules/.bin:$PATH
