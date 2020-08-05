@@ -60,12 +60,11 @@ build-dist: ## Deploy builded version to AWS || eg: make APP_ENVIRONMENT="dev" d
 	docker cp ${DOCKER_IMAGE_NAME}-${DOCKER_RELEASE_TAG}:/usr/share/nginx/html/ ./dist/
 	docker rm ${DOCKER_IMAGE_NAME}-${DOCKER_RELEASE_TAG} --force
 
-deploy-dist-aws: ## Deploy builded version to AWS || eg: make APP_ENVIRONMENT="dev" deploy-dist-aws
-	DOCKER_BUILDKIT=1 docker build -t ${DOCKER_IMAGE_NAME}:${DOCKER_RELEASE_TAG} --target prd .
-	docker run -d --name "${DOCKER_IMAGE_NAME}-${DOCKER_RELEASE_TAG}" ${DOCKER_IMAGE_NAME}:${DOCKER_RELEASE_TAG}
-	docker cp ${DOCKER_IMAGE_NAME}-${DOCKER_RELEASE_TAG}:/usr/share/nginx/html/ ./dist/
-	docker rm ${DOCKER_IMAGE_NAME}-${DOCKER_RELEASE_TAG} --force
-	bash @bin/scripts/bb-le-apps-s3-sync.sh ${APP_ENVIRONMENT}
+deploy-dist-github: ## Deploy master branch dist/ to gh-pages branch
+	# https://gist.github.com/exequielrafaela/ce0d8baff73a43695adbcd4eb684062d
+	rm .gitignore
+	git add dist && git commit -m "Initial dist subtree commit"
+	git subtree push --prefix dist origin gh-pages
 
 #==============================================================#
 # NODEJS                                                       #
