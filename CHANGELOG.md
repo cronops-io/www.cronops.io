@@ -7,6 +7,14 @@ All notable changes to this project will be documented in this file.
 
 
 
+<a name="v0.0.3"></a>
+## [v0.0.3] - 2020-08-05
+
+- CRONOPS-9 | fixing ci job name in circle config
+- Merge branch 'master' of github.com:cronops-io/www.cronops.io
+- CRONOPS-9 | Testing CircleCi automated build and deploy job
+
+
 <a name="v0.0.2"></a>
 ## [v0.0.2] - 2020-08-05
 
@@ -37,5 +45,6 @@ All notable changes to this project will be documented in this file.
 - CRONOPS-9 | Initial Commit
 
 
-[Unreleased]: https://github.com/cronops-io/www.cronops.io/compare/v0.0.2...HEAD
+[Unreleased]: https://github.com/cronops-io/www.cronops.io/compare/v0.0.3...HEAD
+[v0.0.3]: https://github.com/cronops-io/www.cronops.io/compare/v0.0.2...v0.0.3
 [v0.0.2]: https://github.com/cronops-io/www.cronops.io/compare/v0.0.1...v0.0.2
