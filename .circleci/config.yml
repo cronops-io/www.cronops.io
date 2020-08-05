@@ -22,8 +22,6 @@ jobs:
             sudo apt-get update
             sudo apt-get -y upgrade docker-ce
             docker --version # Docker version 19.03.12, build 48a66213fe
-            sudo apt-get -y  install libglu1
-            sudo apt-get -y  install libxi6 libgconf-2-4
 
       - run:
           name: Build
