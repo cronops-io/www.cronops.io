@@ -19,10 +19,7 @@ skills:
 **♾ Our purpose** is to contribute to both building and scaling high-performance technology organizations.
 
 ---
-DevOps will power your team by promoting ["_Product owners, Development, QA, IT Operations, and Infosec work together,
-not only to help each other, but also to ensure that the overall organization succeeds. By working toward a common goal,
-they enable the fast flow of planned work into production (e.g., performing tens, hundreds, or even thousands of code
-deploys per day), while achieving world-class stability, reliability, availability, and security._"
-(**The DevOps Handbook**)](https://www.oreilly.com/library/view/the-devops-handbook/9781457191381/)
+
+[_"Imagine a World Where Dev and Ops Become DevOps"_ (**The DevOps Handbook**)](https://www.oreilly.com/library/view/the-devops-handbook/9781457191381/DOHB-0-FM-introduction.xhtml)
 
 Our pillars:
