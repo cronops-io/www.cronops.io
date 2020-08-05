@@ -45,7 +45,7 @@ workflows:
   test_and_release:
     jobs:
       - release-version-with-changelog:
-          context: cronops-io-org-global-context
+          context: cronops-org-global-context
           filters:
             branches:
              only: # only branches matching the below regex filters will run

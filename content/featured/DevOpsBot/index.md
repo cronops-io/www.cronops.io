@@ -2,7 +2,7 @@
 date: '1'
 title: 'DevOpsBot'
 cover: './demo.png'
-github: 'https://github.com/cronops-io/devops.cronops.io'
+github: 'https://github.com/cronops-io/devopsbot.cronops.io'
 external: 'https://devopsbot.cronops.io'
 tech:
   - DevOps
@@ -13,10 +13,23 @@ tech:
 showInProjects: true
 ---
 
-**DevOpsBot**
+#### **♾ 1st Stage**
+The **CronOps DevOpsBot** Slack integration will share daily DevOps tips with your team members
+based on your interests. Tips could be customized and filtered by **category**
+* Product management
+* Development
+* QA
+* IT Operations
+* Infosec
+* Organizational Culture
+* Transformational Leadership
 
-The CronOps DevOpsBot Slack integration will power your team DevOps culture understanding, aiming to promote
-Product owners, Development, QA, IT Operations, and Infosec work together, not only to help each other, but also to
-ensure that the overall organization succeeds. By working toward a common goal, they enable the fast flow of planned
-work into production (e.g., performing tens, hundreds, or even thousands of code deploys per day), while achieving
-world-class stability, reliability, availability, and security.
+---
+
+#### **♾ 2nd Stage**
+**CronOps DevOpsBot** is your team's chance to take a look and tracks its DevOps methodologies and practices
+maturity in order to improve your software delivery performance.
+You'll assess your team against the **High performing teams DevOps Capabilities to Drive Improvement** from
+[Accelerate](https://www.oreilly.com/library/view/accelerate/9781457191435/).
+At the end of the DevOpsBot session, you'll be presented the results in a personalized dashboard intended to identify
+strengths to exploit as well as challenge areas to grow.
