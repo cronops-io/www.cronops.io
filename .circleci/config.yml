@@ -18,7 +18,11 @@ jobs:
 
       - run:
           name: Build
-          command: make build && make build-dist
+          command: |
+          docker --version
+          apt-get install libglu1
+          apt-get install libxi6 libgconf-2-4
+          make build-dist
 
       - run:
           name: Deploy
