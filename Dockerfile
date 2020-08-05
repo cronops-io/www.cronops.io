@@ -5,14 +5,10 @@ FROM node:14.1.0-stretch-slim AS base-build
 RUN mkdir /app
 WORKDIR /app
 
-#RUN apt-get update && apt-get install -y \
-#libglu1 libxi6 libgconf-2-4 \
-#libgl1-mesa-dev libgl1-mesa-glx \
-#&& apt-get clean
-
-RUN apt-get update \
-  && apt-get install -y libgl1-mesa-dev libgl1-mesa-glx \
-  && apt-get clean
+RUN apt-get update && apt-get install -y \
+libglu1 libxi6 libgconf-2-4 \
+libgl1-mesa-dev libgl1-mesa-glx \
+&& apt-get clean
 
 RUN npm install -g gatsby-cli
 
@@ -39,6 +35,8 @@ CMD ["yarn", "develop", "-H", "0.0.0.0" ]
 FROM node:14.1.0-stretch-slim AS prd-build
 COPY --from=dev /app /app
 WORKDIR /app
+
+RUN apt-get update && apt-get install -y libgl1-mesa-glx && apt-get clean
 RUN yarn build
 
 #
