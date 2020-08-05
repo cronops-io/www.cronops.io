@@ -13,7 +13,8 @@ ENV PATH /app/node_modules/.bin:$PATH
 
 # install and cache app dependencies using yarn
 COPY package.json yarn.lock /app/
-RUN yarn install --pure-lockfile && yarn cache clean
+#RUN yarn install --pure-lockfile && yarn cache clean
+RUN yarn install && yarn cache clean
 
 #
 # Stage: Development
