@@ -17,12 +17,17 @@ jobs:
           command: pwd && ls -ltra && git branch
 
       - run:
-          name: Build
+          name: Installing Pre-requisites
           command: |
+            sudo apt-get update
+            sudo apt-get upgrade docker-ce
             docker --version
-            apt-get install libglu1
-            apt-get install libxi6 libgconf-2-4
-            make build-dist
+            sudo apt-get install libglu1
+            sudo apt-get install libxi6 libgconf-2-4
+
+      - run:
+          name: Build
+          command: make build-dist
 
       - run:
           name: Deploy
