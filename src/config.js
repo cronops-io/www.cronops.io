@@ -6,7 +6,7 @@ module.exports = {
     'CronOps, organizational culture, devops, devsecops, sdlc, best practices',
   siteUrl: 'https://www.cronops.io',
   siteLanguage: 'en_US',
-  googleAnalyticsID: 'UA-XXXXXXXXX-2',
+  googleAnalyticsID: 'UA-174680750-1',
   googleVerification: 'DCl7VAf9tcz6eDxxxxxxxxxxxxxxxxxxxxxx',
   name: 'Cronops',
   location: 'Cordoba, AR',
