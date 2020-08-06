@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://www.cronops.io/sitemap.xml
-Host: https://www.cronops.io

@@ -6,7 +6,7 @@ package-lock.json
 
 # Build directory
 /public
-/dist
+#/dist
 .DS_Store
 
 .vscode/
