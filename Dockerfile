@@ -12,6 +12,7 @@ RUN npm install -g gatsby-cli
 ENV PATH /app/node_modules/.bin:$PATH
 
 # install and cache app dependencies using yarn
+# --pure-lockfile doesn't write the lockfile if it changed
 COPY package.json yarn.lock /app/
 RUN yarn install --pure-lockfile && yarn cache clean
 
