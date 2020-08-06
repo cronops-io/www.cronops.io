@@ -13,7 +13,7 @@ tech:
 showInProjects: true
 ---
 
-[**DevOps Tips**](https://devopstips.cronops.io) show Product Management, Development, QA, IT Operations, and Information
+[**CronOps DevOpsTips**](https://devopstips.cronops.io) show Product Management, Development, QA, IT Operations, and Information
 Security best practices and how they all integrate to contribute in both building and scaling high-performance
 technology organizations. The result of following our tips and shifting to a DevOps mindset and culture should be
 world-class collaboration, communication, reliability, stability, scalability and security at ever lower cost and effort.
