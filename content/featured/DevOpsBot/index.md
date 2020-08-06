@@ -14,13 +14,13 @@ showInProjects: true
 ---
 
 #### **♾ 1st Stage**
-The **CronOps DevOpsBot** Slack integration will share daily DevOps tips with your team members
+The [**CronOps DevOpsBot**](https://github.com/cronops-io/devopsbot.cronops.io) Slack integration will share daily DevOps tips with your team members
 based on your interests. Tips could be customized and filtered by **category**.
 
 ---
 
 #### **♾ 2nd Stage**
-**CronOps DevOpsBot** is your team's chance to take a look and tracks its DevOps methodologies and practices
+[**CronOps DevOpsBot**](https://github.com/cronops-io/devopsbot.cronops.io) is your team's chance to take a look and tracks its DevOps methodologies and practices
 maturity in order to improve your software delivery performance.
 You'll assess your team against the **High performing teams DevOps Capabilities to Drive Improvement** from
 [Accelerate](https://www.oreilly.com/library/view/accelerate/9781457191435/).
