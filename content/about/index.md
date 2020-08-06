@@ -3,7 +3,7 @@ title: 'About Us'
 avatar: './isologo.png'
 skills:
   - DevOps
-  - SecOps
+  - Information Security
   - Strategic Leadership
   - Operational Excellence
   - Lean Management
