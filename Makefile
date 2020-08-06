@@ -10,6 +10,10 @@ DOCKER_COMPOSE_CMD  := COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=1 docker-compo
 DOCKER_IMAGE_NAME   := www-cronops
 DOCKER_RELEASE_TAG  := v0.0.1
 
+# Project Deployment variables
+PROJECT_URL := www.cronops.io
+PROJECT_GIT := git@github.com:cronops-io/www.cronops.io.git
+
 help:
 	@echo 'Available Commands:'
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf " - \033[36m%-18s\033[0m %s\n", $$1, $$2}'
@@ -61,12 +65,12 @@ build-dist: ## Deploy builded version to AWS || eg: make APP_ENVIRONMENT="dev" d
 	docker rm ${DOCKER_IMAGE_NAME}-${DOCKER_RELEASE_TAG} --force
 
 deploy-dist-github: ## Deploy master branch dist/ to gh-pages branch
-	cd dist
-	git init
-	echo "www.cronops.io" > CNAME
-	git add --all .
-	git commit -m "Deploying latest code"
-	git push -f git@github.com:cronops-io/www.cronops.io.git master:gh-pages
+	cd dist &&\
+	git init &&\
+	echo "${PROJECT_URL}" > CNAME &&\
+	git add --all . &&\
+	git commit -m "Deploying latest code" &&\
+	git push -f ${PROJECT_GIT} master:gh-pages
 
 #==============================================================#
 # NODEJS                                                       #

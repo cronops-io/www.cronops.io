@@ -15,14 +15,7 @@ showInProjects: true
 
 #### **♾ 1st Stage**
 The **CronOps DevOpsBot** Slack integration will share daily DevOps tips with your team members
-based on your interests. Tips could be customized and filtered by **category**
-* Product management
-* Development
-* QA
-* IT Operations
-* Infosec
-* Organizational Culture
-* Transformational Leadership
+based on your interests. Tips could be customized and filtered by **category**.
 
 ---
 
