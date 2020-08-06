@@ -64,6 +64,7 @@ deploy-dist-github: ## Deploy master branch dist/ to gh-pages branch
 	# https://gist.github.com/exequielrafaela/ce0d8baff73a43695adbcd4eb684062d
 	rm .gitignore
 	git add dist && git commit -m "Initial dist subtree commit"
+	git pull origin gh-pages
 	git subtree push --prefix dist origin gh-pages
 
 #==============================================================#
