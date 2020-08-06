@@ -7,6 +7,17 @@ All notable changes to this project will be documented in this file.
 
 
 
+<a name="v0.0.7"></a>
+## [v0.0.7] - 2020-08-06
+
+- CRONOPS-9 | featured section DevOpsTips updated
+- CRONOPS-9 | deploying google analytics
+- CRONOPS-9 | adding hyperlinks to featured initiatives
+- CRONOPS-9 | adding comment to dockerfile
+- Merge branch 'master' of github.com:cronops-io/www.cronops.io
+- CRONOPS-9 | updating circleci job
+
+
 <a name="v0.0.6"></a>
 ## [v0.0.6] - 2020-08-06
 
@@ -84,7 +95,8 @@ All notable changes to this project will be documented in this file.
 - CRONOPS-9 | Initial Commit
 
 
-[Unreleased]: https://github.com/cronops-io/www.cronops.io/compare/v0.0.6...HEAD
+[Unreleased]: https://github.com/cronops-io/www.cronops.io/compare/v0.0.7...HEAD
+[v0.0.7]: https://github.com/cronops-io/www.cronops.io/compare/v0.0.6...v0.0.7
 [v0.0.6]: https://github.com/cronops-io/www.cronops.io/compare/v0.0.5...v0.0.6
 [v0.0.5]: https://github.com/cronops-io/www.cronops.io/compare/v0.0.4...v0.0.5
 [v0.0.4]: https://github.com/cronops-io/www.cronops.io/compare/v0.0.3...v0.0.4
