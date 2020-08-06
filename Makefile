@@ -61,11 +61,12 @@ build-dist: ## Deploy builded version to AWS || eg: make APP_ENVIRONMENT="dev" d
 	docker rm ${DOCKER_IMAGE_NAME}-${DOCKER_RELEASE_TAG} --force
 
 deploy-dist-github: ## Deploy master branch dist/ to gh-pages branch
-	# https://gist.github.com/exequielrafaela/ce0d8baff73a43695adbcd4eb684062d
-	rm .gitignore
-	git add dist && git commit -m "Initial dist subtree commit"
-	git pull origin gh-pages -X theirs
-	git subtree push --prefix dist origin gh-pages
+	cd dist
+	git init
+	echo "www.cronops.io" > CNAME
+	git add --all .
+	git commit -m "Deploying latest code"
+	git push -f git@github.com:cronops-io/www.cronops.io.git master:gh-pages
 
 #==============================================================#
 # NODEJS                                                       #
