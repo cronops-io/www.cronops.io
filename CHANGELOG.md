@@ -7,6 +7,13 @@ All notable changes to this project will be documented in this file.
 
 
 
+<a name="v0.0.9"></a>
+## [v0.0.9] - 2020-08-10
+
+- Merge branch 'master' of github.com:cronops-io/www.cronops.io
+- CRONOPS-16 | DevOpsTips featured project cover updated
+
+
 <a name="v0.0.8"></a>
 ## [v0.0.8] - 2020-08-06
 
@@ -101,7 +108,8 @@ All notable changes to this project will be documented in this file.
 - CRONOPS-9 | Initial Commit
 
 
-[Unreleased]: https://github.com/cronops-io/www.cronops.io/compare/v0.0.8...HEAD
+[Unreleased]: https://github.com/cronops-io/www.cronops.io/compare/v0.0.9...HEAD
+[v0.0.9]: https://github.com/cronops-io/www.cronops.io/compare/v0.0.8...v0.0.9
 [v0.0.8]: https://github.com/cronops-io/www.cronops.io/compare/v0.0.7...v0.0.8
 [v0.0.7]: https://github.com/cronops-io/www.cronops.io/compare/v0.0.6...v0.0.7
 [v0.0.6]: https://github.com/cronops-io/www.cronops.io/compare/v0.0.5...v0.0.6
