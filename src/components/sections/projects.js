@@ -6,7 +6,7 @@ import sr from '@utils/sr';
 import { srConfig } from '@config';
 import { FormattedIcon } from '@components/icons';
 import styled from 'styled-components';
-import { theme, mixins, media, Section, Button } from '@styles';
+import { theme, mixins, media, Section, Button, Heading } from '@styles';
 const { colors, fontSizes, fonts } = theme;
 
 const StyledContainer = styled(Section)`
@@ -153,7 +153,8 @@ const Projects = ({ data }) => {
 
   return (
     <StyledContainer id="related-projects">
-      <StyledTitle ref={revealTitle}>Related Projects</StyledTitle>
+      <Heading ref={revealTitle}>Related Projects</Heading>
+      <StyledTitle ref={revealTitle}>Explore them</StyledTitle>
       <StyledArchiveLink to="/archive" ref={revealArchiveLink}>
         view the complete list
       </StyledArchiveLink>
