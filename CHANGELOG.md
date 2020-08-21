@@ -7,6 +7,13 @@ All notable changes to this project will be documented in this file.
 
 
 
+<a name="v0.0.12"></a>
+## [v0.0.12] - 2020-08-21
+
+- Merge branch 'master' of github.com:cronops-io/www.cronops.io
+- CRONOPS-3 | adding datree.io to related projects
+
+
 <a name="v0.0.11"></a>
 ## [v0.0.11] - 2020-08-16
 
@@ -120,7 +127,8 @@ All notable changes to this project will be documented in this file.
 - CRONOPS-9 | Initial Commit
 
 
-[Unreleased]: https://github.com/cronops-io/www.cronops.io/compare/v0.0.11...HEAD
+[Unreleased]: https://github.com/cronops-io/www.cronops.io/compare/v0.0.12...HEAD
+[v0.0.12]: https://github.com/cronops-io/www.cronops.io/compare/v0.0.11...v0.0.12
 [v0.0.11]: https://github.com/cronops-io/www.cronops.io/compare/v0.0.10...v0.0.11
 [v0.0.10]: https://github.com/cronops-io/www.cronops.io/compare/v0.0.9...v0.0.10
 [v0.0.9]: https://github.com/cronops-io/www.cronops.io/compare/v0.0.8...v0.0.9
