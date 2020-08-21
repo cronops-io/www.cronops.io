@@ -7,6 +7,12 @@ All notable changes to this project will be documented in this file.
 
 
 
+<a name="v0.0.11"></a>
+## [v0.0.11] - 2020-08-16
+
+- CRONOPS-3 | Adding roadmap.sh to related projects section
+
+
 <a name="v0.0.10"></a>
 ## [v0.0.10] - 2020-08-12
 
@@ -114,7 +120,8 @@ All notable changes to this project will be documented in this file.
 - CRONOPS-9 | Initial Commit
 
 
-[Unreleased]: https://github.com/cronops-io/www.cronops.io/compare/v0.0.10...HEAD
+[Unreleased]: https://github.com/cronops-io/www.cronops.io/compare/v0.0.11...HEAD
+[v0.0.11]: https://github.com/cronops-io/www.cronops.io/compare/v0.0.10...v0.0.11
 [v0.0.10]: https://github.com/cronops-io/www.cronops.io/compare/v0.0.9...v0.0.10
 [v0.0.9]: https://github.com/cronops-io/www.cronops.io/compare/v0.0.8...v0.0.9
 [v0.0.8]: https://github.com/cronops-io/www.cronops.io/compare/v0.0.7...v0.0.8
