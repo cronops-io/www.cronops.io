@@ -17,7 +17,8 @@ DOCKER_COMPOSE_CMD      := COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=1 docker-c
 DOCKER_PRD_RELEASE_TAG  := v0.0.1
 ```
 
-* Update your NodeJs dependencies file
+* Update your NodeJs dependencies manager (npm) file ( :ledger: consider this is an OPTIONAL step, only strictly
+necessary if dependencies were updated or new ones are being added)
    1. Update /package.json
    2. Update `yarn.lock` w/ `make yarn-import` cmd
 
@@ -32,6 +33,11 @@ web browser.
 * Check running containers with docker-compose:
 ```bash
 make ps
+```
+
+* Check running containers logs:
+```bash
+make app-logs
 ```
 
 * Stop and remove the containers:
