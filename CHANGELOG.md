@@ -7,6 +7,14 @@ All notable changes to this project will be documented in this file.
 
 
 
+<a name="v0.0.15"></a>
+## [v0.0.15] - 2020-10-01
+
+- CRONOPS-X | fixing ci
+- CRONOPS-X | updating .gitignore
+- CRONOPS-X | upgrading makefile approach
+
+
 <a name="v0.0.14"></a>
 ## [v0.0.14] - 2020-09-18
 
@@ -140,7 +148,8 @@ All notable changes to this project will be documented in this file.
 - CRONOPS-9 | Initial Commit
 
 
-[Unreleased]: https://github.com/cronops-io/www.cronops.io/compare/v0.0.14...HEAD
+[Unreleased]: https://github.com/cronops-io/www.cronops.io/compare/v0.0.15...HEAD
+[v0.0.15]: https://github.com/cronops-io/www.cronops.io/compare/v0.0.14...v0.0.15
 [v0.0.14]: https://github.com/cronops-io/www.cronops.io/compare/v0.0.13...v0.0.14
 [v0.0.13]: https://github.com/cronops-io/www.cronops.io/compare/v0.0.12...v0.0.13
 [v0.0.12]: https://github.com/cronops-io/www.cronops.io/compare/v0.0.11...v0.0.12
