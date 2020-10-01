@@ -6,7 +6,10 @@ jobs:
   #
   build-deploy-gh-pages:
     machine:
-      image: ubuntu-1604:201903-01
+      image: ubuntu-1604:202007-01 # Ubuntu 16.04, Docker v19.03.12, Docker Compose v1.26.1
+
+      # This job has been blocked because Docker Layer Caching is not available on your plan.
+      # Should upgrade if necessary.
       docker_layer_caching: false
 
     steps:
@@ -24,6 +27,12 @@ jobs:
             docker --version # Docker version 19.03.12, build 48a66213fe
 
       - run:
+          name: Initialize Repo Makefiles
+          command: |
+            make init-makefiles
+            git update-index --assume-unchanged "Makefile"
+
+      - run:
           name: Build
           command: make build-dist
 
@@ -39,7 +48,7 @@ jobs:
   #
   release-version-with-changelog:
     machine:
-      image: ubuntu-1604:201903-01
+      image: ubuntu-1604:202007-01
       docker_layer_caching: false
 
     environment:
@@ -53,6 +62,12 @@ jobs:
           command: pwd && ls -ltra && git branch
 
       - run:
+          name: Initialize Repo Makefiles
+          command: |
+            make init-makefiles
+            git update-index --assume-unchanged "Makefile"
+
+      - run:
           name: Release New Version
           command: |
             if git status | grep 'nothing to commit, working tree clean'; then
@@ -61,7 +76,7 @@ jobs:
               echo "==============================================================================================="
               git config --global user.email "$GIT_USER_EMAIL"
               git config --global user.name "$GIT_USER_NAME"
-              make -f Makefile.release release-$VERSION_NUMBER-with-changelog-circleci
+              make release-$VERSION_NUMBER-with-changelog-circleci
             else
               echo "==============================================================================================="
               echo "Changes in working directory pending to be pushed - please check 'git status' cmd output below "
